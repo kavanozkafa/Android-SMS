@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="adefault.nisan19.MainActivity"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:weightSum="1">
+
+        <Button
+            android:text="SMS gönder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnsmsgonder" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="ugur;tuna"
+            android:ems="10"
+            android:id="@+id/edtisim" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="05343460377;05549011454"
+            android:ems="10"
+            android:id="@+id/edtno" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Mesaj"
+            android:ems="10"
+            android:id="@+id/edtmesaj" />
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="206dp"
+        android:id="@+id/liste"
+        android:layout_weight="0.52" />
+
+    <CheckBox
+        android:text="Kadın mı?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cbcinsiyet" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="İsim"
+        android:ems="10"
+        android:id="@+id/listeisim" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Yaş"
+        android:ems="10"
+        android:id="@+id/listeyas" />
+
+    <Button
+        android:text="Guncelle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnlisteguncelle" />
+
+    <Button
+        android:text="Ekle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnekle" />
+</LinearLayout>
